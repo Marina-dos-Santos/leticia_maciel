@@ -1,0 +1,50 @@
+.header {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+.logo {
+    display: inline-block;
+    width: 60px;
+    height: 50px;
+}
+.logo img {
+    width: 60px;
+    height: 50px;
+}
+.nav-menu {
+    display: none;
+}
+input[type="checkbox"]:checked ~ .nav-menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+}
+.menu a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+.menu {
+    list-style: none;
+    font-family: 'Cormorant Garamond', serif;
+}
+.menu li {
+    margin: 16px 0;
+}
+/*
+@media screen and (min-width: 768px) {
+    .navigation-menu {
+        display: none;
+    }
+    .navigation-menu .nav-menu {
+        display: block;
+    }
+}
+*/
