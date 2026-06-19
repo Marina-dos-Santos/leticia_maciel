@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('../fonts/CormorantGaramond.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Fraunces';
+    src: url('../fonts/Fraunces.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cairo';
+    src: url('../fonts/Cairo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --primary-color: #998269;
+    --secondary-color: #faf4ef;
+    --background-primary-color: #efedec;
+    --background-secondary-color: #FFFFFF;
+    --hover-color: #c5b39c;
+}
+
+/* CSS RESET */
+body,
+img,
+h1,
+p,
+fieldset,
+legend,
+label,
+input,
+select,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+    background-color: var(--primary-color);
+}
+
