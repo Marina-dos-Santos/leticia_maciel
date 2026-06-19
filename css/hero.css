@@ -1,75 +1,124 @@
 .hero .img-logo {
-    width: 140px;
-    height: 116px;
-    background-image: url('../img/logo-hero-mobile.png');
-    background-size: contain;
-    background-repeat: no-repeat;
+  width: 140px;
+  height: 116px;
+  background-image: url("../img/logo-hero-mobile.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .hero-logo h1 {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 32px;
-    color: var(--secondary-color);
-    font-weight: normal;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2rem;
+  color: var(--secondary-color);
+  font-weight: normal;
 }
 .hero-logo p {
-    font-family: "Cairo";
-    font-size: 12px;
-    color: var(--secondary-color);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    line-height: 14px;
+  font-family: "Cairo";
+  font-size: 0.75rem;
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+  line-height: 0.875rem;
 }
 .hero {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-color);
+  padding-bottom: 2rem;
 }
 .hero .hero-logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .hero .hero-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .hero-content h2 {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 20px;
-    color: var(--secondary-color);
-    text-align: center;
-    font-weight: lighter;
-    margin: 40px 0 10px;
-    letter-spacing: 1px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.25rem;
+  color: var(--secondary-color);
+  text-align: center;
+  font-weight: lighter;
+  margin: 2.5rem 0 0.625rem;
+  letter-spacing: 0.0625rem;
 }
 .hero-content p {
-    font-family: "Fraunces", sans-serif;
-    font-size: 14px;
-    color: var(--secondary-color);
-    text-align: center;
-    max-width: 230px;
-    margin: 10px 0 10px;
+  font-family: "Fraunces", sans-serif;
+  font-size: 0.875rem;
+  color: var(--secondary-color);
+  text-align: center;
+  max-width: 230px;
+  margin: 0.625rem 0 0.625rem;
 }
 .hero-content hr {
-    width: 50px;
-    height: 3px;
-    background-color: var(--secondary-color);
-    border: none;
+  width: 50px;
+  height: 3px;
+  background-color: var(--secondary-color);
+  border: none;
 }
 
 .button {
-    width: 280px;
-    height: 50px;
-    background-color: var(--secondary-color);
-    font-family: "Cairo";
-    color: var(--primary-color);
-    text-transform: uppercase;
-    display: inline-block;
-    font-weight: bold;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 10px;
-    box-sizing: border-box;
-    padding-top: 10px;
+  width: 280px;
+  height: 50px;
+  background-color: var(--secondary-color);
+  font-family: "Cairo";
+  color: var(--primary-color);
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 0.625rem;
+  box-sizing: border-box;
+  padding-top: 0.625rem;
 }
+
+@media screen and (min-width: 768px) {
+  .hero {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  .hero .img-logo {
+    width: 210px;
+    height: 170px;
+    background-image: url("../img/logo-hero-tablet.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .hero-logo h1 {
+    font-size: 3rem;
+  }
+  .hero-logo p {
+    font-size: 1rem;
+    line-height: 1.125rem;
+  }
+
+  .hero .hero-content {
+    max-width: 320px;
+    align-items: flex-start;
+  }
+
+  .hero-content h2 {
+    font-size: 2rem;
+    text-align: start;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    text-align: start;
+    max-width: 100%;
+    margin-bottom: 2rem;
+
+  }
+  .hero-content hr {
+    width: 112px;
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+
