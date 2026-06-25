@@ -1,0 +1,30 @@
+ .approuch {
+    background-color: var(--background-secondary-color);
+    color: var(--primary-color);
+}
+.approuch-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+}
+.approuch-container .approuch-subtitle em {
+  font-family: "Cormorant Garamond", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: normal;
+}
+.approuch-container hr {
+  width: 3.125rem;
+  height: 0.1875rem;
+  background-color: var(--primary-color);
+  border: none;
+  margin: 1.25rem auto;
+}
+
+.approuch-container .approuch-description {
+  font-family: "Fraunces", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
