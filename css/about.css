@@ -1,47 +1,44 @@
 .about {
-    background-color: var(--background-primary-color);
-    color: var(--primary-color);
+  background-color: var(--background-primary-color);
+  color: var(--primary-color);
 }
 .about-container {
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .section-title {
-    margin: 0;
-    padding: 3.125rem 0 1rem;
-    text-transform: uppercase;
-    font-family: 'Cormorant Garamond', sans-serif;
-    font-size: 1.25rem;
-    text-align: center;
-
+  margin: 0;
+  padding: 3.125rem 0 1rem;
+  text-transform: uppercase;
+  font-family: "Cormorant Garamond", sans-serif;
+  font-size: 1.25rem;
+  text-align: center;
+}
+.psychologist-photo img {
+  width: 80%;
+  height: auto;
 }
 .psychologist-photo {
-    width: 15.625rem;
-    height: 15.3125rem;
-    background-image: url('../img/leticia_mobile.png');
-    background-size: contain;
-    background-repeat: no-repeat;
+  text-align: center;
 }
 .about-content {
-      max-width: 17.5rem;
-      padding-top: 1.875rem;
+  max-width: 17.5rem;
+  padding-top: 1.875rem;
 }
 
 .about-content em {
-    font-family: 'Cormorant Garamond', sans-serif;
-    font-size: 3rem;
-    font-weight: bold;
-    font-style: normal;
-    text-align: start;
+  font-family: "Cormorant Garamond", sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  font-style: normal;
+  text-align: start;
 }
 
-
 .about-content .profile-subtitle {
-    font-family: 'Cairo', sans-serif;
-    text-transform: uppercase;
-} 
+  font-family: "Cairo", sans-serif;
+  text-transform: uppercase;
+}
 
 .about-content hr {
   width: 3.125rem;
@@ -51,9 +48,23 @@
   margin: 1.25rem auto 1.25rem 0;
 }
 .about-content .profile-description {
-    font-family: 'Fraunces', sans-serif;
-    font-size: 1rem;
-    margin-bottom: 2rem;
+  font-family: "Fraunces", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 2rem;
 }
 
-
+@media screen and (min-width: 768px) {
+  .about-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .psychologist-photo {
+    max-width: 300px;
+  }
+  .psychologist-photo img {
+    width: 100%;
+  }
+  .about-content {
+  max-width: 410px;
+}
+}
