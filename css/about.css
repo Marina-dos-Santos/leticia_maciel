@@ -1,0 +1,83 @@
+.about {
+  background-color: var(--background-primary-color);
+  color: var(--primary-color);
+}
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.psychologist-photo img {
+  width: 80%;
+  height: auto;
+}
+.psychologist-photo {
+  text-align: center;
+}
+.about-content {
+  max-width: 17.5rem;
+  padding-top: 1.875rem;
+}
+
+.about-content em {
+  font-family: "Cormorant Garamond", sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  font-style: normal;
+  text-align: start;
+}
+
+.about-content .profile-subtitle {
+  font-family: "Cairo", sans-serif;
+  text-transform: uppercase;
+}
+
+.about-content hr {
+  width: 3.125rem;
+  height: 0.1875rem;
+  background-color: var(--primary-color);
+  border: none;
+  margin: 1.25rem auto 1.25rem 0;
+}
+.about-content .profile-description {
+  font-family: "Fraunces", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .about-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .psychologist-photo {
+    max-width: 18.75rem;
+  }
+  .psychologist-photo img {
+    width: 100%;
+  }
+  .about-content {
+    max-width: 25.625rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .psychologist-photo {
+    max-width: 23.75rem;
+  }
+  .about-content {
+    max-width: 35.625rem;
+  }
+  .about-content em {
+    font-size: 4rem;
+  }
+  .about-content .profile-subtitle {
+    font-size: 1.25rem;
+  }
+  .about-content hr {
+    width: 7rem;
+  }
+  .about-content .profile-description {
+    font-size: 1.5rem;
+  }
+}
