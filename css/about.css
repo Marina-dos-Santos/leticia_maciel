@@ -59,12 +59,32 @@
     justify-content: space-evenly;
   }
   .psychologist-photo {
-    max-width: 300px;
+    max-width: 18.75rem;
   }
   .psychologist-photo img {
     width: 100%;
   }
   .about-content {
-  max-width: 410px;
+    max-width: 25.625rem;
+  }
 }
+@media screen and (min-width: 1024px) {
+  .psychologist-photo {
+    max-width: 23.75rem;
+  }
+  .about-content {
+    max-width: 35.625rem;
+  }
+  .about-content em {
+    font-size: 4rem;
+  }
+  .about-content .profile-subtitle {
+    font-size: 1.25rem;
+  }
+  .about-content hr {
+    width: 7rem;
+  }
+  .about-content .profile-description {
+    font-size: 1.5rem;
+  }
 }
