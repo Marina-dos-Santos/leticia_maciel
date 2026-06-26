@@ -50,6 +50,7 @@
   .about-container {
     flex-direction: row;
     justify-content: space-evenly;
+    padding-bottom: 3.125rem;
   }
   .psychologist-photo {
     max-width: 18.75rem;
