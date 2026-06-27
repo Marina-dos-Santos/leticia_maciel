@@ -1,7 +1,7 @@
 .help {
   background-color: var(--background-primary-color);
   color: var(--primary-color);
-  padding-bottom: 50px;
+  padding-bottom: 3.125rem;
 }
 .help hr {
   width: 3.125rem;
@@ -17,7 +17,7 @@
   justify-content: center;
   gap: 1.5rem;
   width: 100%;
-  max-width: 500px;
+  max-width: 31.25rem;
   margin: 0 auto;
 }
 .help-card {
@@ -25,48 +25,48 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 130px;
-  height: 140px;
+  width: 8.125rem;
+  height: 8.75rem;
   background-color: var(--secondary-color);
-  border-radius: 80px 80px 0 0;
-  gap: 8px;
-  padding-top: 30px;
+  border-radius: 5rem 5rem 0 0;
+  gap: 0.5rem;
+  padding-top: 1.875rem;
   box-sizing: border-box;
 }
 .help-card .help-icon {
-  width: 85px;
-  height: 62px;
+  width: 5.3125rem;
+  height: 3.875rem;
 }
 @media screen and (min-width: 768px) {
   .help-card {
-    width: 148px;
-    height: 152px;
-    padding-top: 40px;
+    width: 9.25rem;
+    height: 9.5rem;
+    padding-top: 2.5rem;
   }
   .help-container {
-    gap: 40px;
-    max-width: 550px;
+    gap: 2.5rem;
+    max-width: 34.375rem;
   }
 }
 @media screen and (min-width: 1024px) {
   .help-container {
     flex-wrap: nowrap;
-    gap: 8px;
-    max-width: 1000px;
+    gap: 0.5rem;
+    max-width: 62.5rem;
   }
   .help-card {
-    width: 160px;
-    height: 220px;
-    padding-top: 50px;
+    width: 10rem;
+    height: 13.75rem;
+    padding-top: 3.125rem;
   }
   .help-card .help-icon {
-    width: 120px;
-    height: 110px;
+    width: 7.5rem;
+    height: 6.875rem;
   }
 }
 @media screen and (min-width: 1300px) {
   .help-container {
-    gap: 30px;
-    max-width: 1300px;
+    gap: 1.875rem;
+    max-width: 81.25rem;
   }
 }
