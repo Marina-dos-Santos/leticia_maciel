@@ -37,3 +37,13 @@
     width: 85px;
     height: 62px;
 }
+@media screen and (min-width: 768px) {
+    .help-card {
+    width: 148px;
+    height: 152px;
+    padding-top: 40px;
+}
+.help-container {
+    gap: 28px;
+}
+}
