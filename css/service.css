@@ -1,0 +1,75 @@
+.service {
+  background-color: var(--background-secondary-color);
+  color: var(--primary-color);
+  margin-bottom: 3.125rem;
+}
+.service-container {
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.service-subtitle em {
+  font-family: "Cormorant Garamond", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: normal;
+}
+.service-container hr {
+  width: 3.125rem;
+  height: 0.1875rem;
+  background-color: var(--primary-color);
+  border: none;
+  margin: 1.25rem auto;
+}
+.service-cards {
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+}
+.service-cards .service-card {
+  width: 15.9375rem;
+  height: 8.25rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 1.875rem;
+}
+.service-cards .service-card p {
+  font-family: "Fraunces", sans-serif;
+  font-size: 1.25rem;
+  width: 70%;
+  margin: 2.25rem auto;
+}
+
+@media screen and (min-width: 768px) {
+  .service-subtitle em {
+    font-size: 2.25rem;
+  }
+  .service-cards {
+    max-width: 90%;
+    flex-direction: row;
+    gap: 3.125rem;
+    margin-top: 1.25rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .service-subtitle em {
+    font-size: 3.125rem;
+  }
+  .service-cards .service-card {
+  width: 17.1875rem;
+  height: 11.4375rem;
+}
+.service-cards .service-card p {
+  font-size: 1.75rem;
+  margin: 3.59375rem auto;
+}
+}
