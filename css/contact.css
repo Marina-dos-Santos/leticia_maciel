@@ -1,0 +1,100 @@
+.contact {
+  background-color: var(--background-primary-color);
+  color: var(--primary-color);
+  padding-bottom: 3.125rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-container {
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.contact-subtitle em {
+  font-family: "Cormorant Garamond", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: normal;
+}
+.contact-container hr {
+  width: 3.125rem;
+  height: 0.1875rem;
+  background-color: var(--primary-color);
+  border: none;
+  margin: 1.25rem auto;
+}
+.contact-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  width: 90%;
+}
+.contact-card {
+  min-width: 17.5rem;
+  height: 4.625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 3.125rem;
+  border: 0.1875rem solid var(--primary-color);
+}
+.button-dark {
+  width: 280px;
+  height: 50px;
+  margin: 1rem auto;
+  background-color: var(--primary-color);
+  font-family: "Cairo";
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 0.625rem;
+  box-sizing: border-box;
+  padding-top: 0.625rem;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-subtitle em {
+    font-size: 2.25rem;
+  }
+  .contact-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.125rem;
+  }
+  .button-dark {
+    margin: 1.25rem auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contact-subtitle em {
+    font-size: 3.125rem;
+  }
+  .contact-container hr {
+    width: 7rem;
+  }
+  .contact-card {
+    min-width: 27rem;
+    height: 11.4375rem;
+  }
+  .contact-text {
+    font-size: 1.75rem;
+  }
+  .button-dark {
+    width: 580px;
+    height: 70px;
+    font-size: 2rem;
+    padding-top: 0.25rem;
+    margin: 1.875rem auto;
+  }
+}
