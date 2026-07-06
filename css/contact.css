@@ -2,6 +2,9 @@
   background-color: var(--background-primary-color);
   color: var(--primary-color);
   padding-bottom: 3.125rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .contact-container {
   max-width: 90%;
@@ -30,9 +33,10 @@
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
-    width: 100%;
+    width: 90%;
 }
 .contact-card {
+    min-width: 17.5rem;
     height: 4.625rem;
     display: flex;
     flex-direction: column;
@@ -45,7 +49,7 @@
 .button-dark {
   width: 280px;
   height: 50px;
-  margin: 0 4px;
+  margin: 1rem auto;
   background-color: var(--primary-color);
   font-family: "Cairo";
   color: var(--secondary-color);
@@ -57,4 +61,19 @@
   border-radius: 0.625rem;
   box-sizing: border-box;
   padding-top: 0.625rem;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-subtitle em {
+    font-size: 2.25rem;
+  }
+  .contact-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.125rem;
+  }
+  .button-dark {
+  margin: 1.25rem auto;
+  
+}
 }
