@@ -35,15 +35,27 @@
   gap: 1rem;
 }
 .service-cards .service-card {
-    width: 15.9375rem;
-    height: 8.25rem;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    border-radius: 1.875rem;
+  width: 15.9375rem;
+  height: 8.25rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 1.875rem;
 }
 .service-cards .service-card p {
-    font-family: "Fraunces", sans-serif;
-    font-size: 1.25rem;
-    width: 70%;
-    margin: 2.25rem auto;
+  font-family: "Fraunces", sans-serif;
+  font-size: 1.25rem;
+  width: 70%;
+  margin: 2.25rem auto;
+}
+
+@media screen and (min-width: 768px) {
+  .service-subtitle em {
+    font-size: 2.25rem;
+  }
+  .service-cards {
+    max-width: 90%;
+    flex-direction: row;
+    gap: 3.125rem;
+    margin-top: 1.25rem;
+  }
 }
