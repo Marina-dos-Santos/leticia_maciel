@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
     gap: 1.25rem;
-    padding-bottom: 3.125rem;
+    padding-bottom: 1.25rem;
 }
 .footer-logo {
     display: flex;
@@ -37,4 +37,15 @@
 .footer-icons img {
     width: 2.375rem;
     height: 2.375rem;
+}
+@media screen and (min-width: 768px) {
+    .footer {
+        flex-direction: row; 
+        justify-content: space-between;
+        padding: 1rem 0.625rem 1.25rem 0.625rem;
+    }
+    .footer-description {
+        max-width: 12.5rem;
+        text-align: center;
+    }
 }
