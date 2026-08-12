@@ -141,12 +141,12 @@
     line-height: 1.25rem;
   }
   .hero-content h2 {
-    font-size: 3rem;
+    font-size: 3.25rem;
   }
   .hero .hero-content {
-    max-width: 420px;
+    max-width: 31.25rem;
   }
   .hero-content p {
-    font-size: 1.125rem;
+    font-size: 1.5rem;
   }
 }
