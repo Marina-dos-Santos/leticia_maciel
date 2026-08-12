@@ -5,8 +5,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.25rem;
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
+
 .logo {
   display: inline-block;
   width: 60px;
@@ -73,6 +76,11 @@ input[type="checkbox"]:checked ~ .nav-menu {
     width: 70px;
     height: 60px;
   }
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -91,4 +99,3 @@ input[type="checkbox"]:checked ~ .nav-menu {
     font-size: 1.375rem;
   }
 }
-

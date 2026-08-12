@@ -69,4 +69,7 @@
     gap: 1.875rem;
     max-width: 81.25rem;
   }
+  .help-text {
+    font-size: 1.125rem;
+  }
 }

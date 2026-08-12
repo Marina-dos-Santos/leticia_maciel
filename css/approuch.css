@@ -1,6 +1,7 @@
 .approuch {
   background-color: var(--background-secondary-color);
   color: var(--primary-color);
+  padding-bottom: 3.125rem;
 }
 .approuch-container {
   max-width: 90%;
