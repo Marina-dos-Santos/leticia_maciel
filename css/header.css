@@ -1,17 +1,17 @@
 .header {
   background-color: var(--primary-color);
+  font-family: 'Cormorant Garamond', sans-serif;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 1.25rem;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
 .logo {
-  display: inline-block;
+  padding: 10px;
+  display: none;
   width: 60px;
   height: 50px;
 }
@@ -20,53 +20,76 @@
   height: 50px;
 }
 .nav-menu {
-  display: none;
-}
-input[type="checkbox"]:checked ~ .nav-menu {
-  display: block;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  background-color: var(--primary-color);
-}
-.menu a {
-  text-decoration: none;
   color: var(--secondary-color);
+  padding: 10px;
+  position: relative;
 }
 .menu {
   list-style: none;
-  font-family: "Cormorant Garamond", serif;
+  padding: 0;
+  margin: 0;
 }
-.menu li {
-  margin: 1rem 0;
+.hamburger-button .icon {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+}
+.hamburger-button[aria-expanded="false"] .icon::before {
+  content: "\2630";
+}
+.hamburger-button[aria-expanded="true"] .icon::before {
+  content: "\2715";
+}
+.hamburger-button-js-enabled + .menu {
+  display: flex;
+  flex-direction: column;
+}
+.hamburger-button-js-enabled+.menu-closed {
+  display: none;
+}
+
+.menu li a {
+  color: var(--secondary-color);
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  font-size: 1rem;
+  border: 0.125rem solid transparent;
+  border-radius: 0.625rem;
+}
+.menu li a:hover,
+.menu li a:focus {
+  border-color: var(--secondary-color);
+}
+.hamburger-button {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  padding: 14px;
+  cursor: pointer;
+}
+
+.hamburger-button-js-enabled {
+  display: block;
 }
 
 @media screen and (min-width: 768px) {
-  .navigation-menu label {
-    display: none;
-  }
-  .nav-menu {
+  .logo {
     display: block;
   }
-  .menu {
+  .hamburger-button {
+    display: none;
+  }
+  .hamburger-button-js-enabled + .menu {
+    position: static;
     display: flex;
-    gap: 0.625rem;
-  }
-  .nav-menu .menu a {
-    padding: 0.5rem;
-    border: 0.125rem solid transparent;
-    border-radius: 0.625rem;
-  }
-  .nav-menu .menu a:hover {
-    border-color: var(--secondary-color);
-  }
-  .nav-menu .menu li:hover {
-    margin: 1rem 0;
-  }
-  .nav-menu ul.menu {
-    margin: 0;
-    padding: 0;
+    flex-direction: row;
+    width: auto;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
   }
   .logo {
     width: 70px;
@@ -75,17 +98,12 @@ input[type="checkbox"]:checked ~ .nav-menu {
   .logo img {
     width: 70px;
     height: 60px;
-  }
-  .header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .header {
-    padding: 10px 10px 10px;
+  .menu li a {
+    font-size: 1.375rem;
   }
   .logo {
     width: 90px;
@@ -94,8 +112,5 @@ input[type="checkbox"]:checked ~ .nav-menu {
   .logo img {
     width: 90px;
     height: 80px;
-  }
-  .nav-menu .menu a {
-    font-size: 1.375rem;
-  }
+} 
 }

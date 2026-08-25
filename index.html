@@ -9,44 +9,42 @@
     <title>Letícia Maciel</title>
   </head>
   <body>
-    <header id="inicio" class="header">
+    <header class="header">
       <a class="logo" href="index.html" title="Voltar para a página inicial">
         <img src="img/logo-header.png" alt="Logo - Psicóloga Letícia Maciel" />
       </a>
-      <div class="navigation-menu">
-        <label for="menu">
-          <img src="img/menu.svg" alt="Menu" />
-        </label>
-        <input type="checkbox" id="menu" hidden />
-
-        <nav class="nav-menu">
-          <ul class="menu">
-            <li>
-              <a href="index.html" title="Ir para a seção de início">Início</a>
-            </li>
-            <li>
-              <a href="#sobre" title="Ir para a seção sobre mim">Sobre mim</a>
-            </li>
-            <li>
-              <a href="#abordagem" title="Ir para a seção abordagem"
-                >Abordagem</a
-              >
-            </li>
-            <li>
-              <a href="#atendimento" title="Ir para a seção atendimento"
-                >Atendimento</a
-              >
-            </li>
-            <li>
-              <a href="#contato" title="Ir para a seção contato">Contato</a>
-            </li>
-            <li><a href="https://wa.me/5511922886319?text=Olá!%20Gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener noreferrer">Agendar</a></li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="nav-menu">
+        <button id="hamburger-button" class="hamburger-button" aria-label="Menu Principal" aria-controls="menu" aria-expanded="true">
+          <span class="icon"></span>
+        </button>
+        <ul id="menu" class="menu">
+          <li>
+            <a href="#hero" title="Ir para a seção de início">Início</a>
+          </li>
+          <li>
+            <a href="#about" title="Ir para a seção sobre mim">Sobre mim</a>
+          </li>
+          <li>
+            <a href="#approuch" title="Ir para a seção abordagem">Abordagem</a>
+          </li>
+          <li>
+            <a href="#service" title="Ir para a seção atendimento"
+              >Atendimento</a>
+          </li>
+          <li>
+            <a href="#contact" title="Ir para a seção contato">Contato</a>
+          </li>
+          <li>
+            <a
+              href="https://wa.me/5511922886319?text=Olá!%20Gostaria%20de%20agendar%20um%20atendimento."
+              target="_blank"
+              rel="noopener noreferrer">Agendar</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-      <section class="hero">
+      <section id="hero" class="hero">
         <div class="hero-logo">
           <div class="img-logo"></div>
           <h1>Letícia Maciel</h1>
@@ -57,10 +55,16 @@
           <h2>Psicoterapia para Adolescentes e Adultos</h2>
           <hr />
           <p>Um espaço de escuta, acolhimento e construção de sentido.</p>
-          <a href="https://wa.me/5511922886319?text=Olá!%20Gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener noreferrer" class="button">Agendar atendimento</a>
+          <a
+            href="https://wa.me/5511922886319?text=Olá!%20Gostaria%20de%20agendar%20um%20atendimento."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button"
+            >Agendar atendimento</a
+          >
         </div>
       </section>
-      <section id="sobre" class="about">
+      <section id="about" class="about">
         <h2 class="section-title">Sobre mim</h2>
         <div class="about-container">
           <div class="psychologist-photo">
@@ -82,7 +86,7 @@
           </div>
         </div>
       </section>
-      <section id="abordagem" class="approuch">
+      <section id="approuch" class="approuch">
         <h2 class="section-title">Minha Abordagem</h2>
         <div class="approuch-container">
           <p class="approuch-subtitle">
@@ -151,7 +155,7 @@
           </div>
         </div>
       </section>
-      <section id="atendimento" class="service">
+      <section id="service" class="service">
         <h2 class="section-title">Atendimento</h2>
         <div class="service-container">
           <p class="service-subtitle">
@@ -168,7 +172,7 @@
           </div>
         </div>
       </section>
-      <section id="contato" class="contact">
+      <section id="contact" class="contact">
         <h2 class="section-title">Vamos conversar</h2>
         <div class="contact-container">
           <p class="contact-subtitle">
@@ -192,7 +196,13 @@
             <p class="contact-text">@psi.leticiamaciel<br />Instagram</p>
           </div>
         </div>
-        <a href="https://wa.me/5511922886319?text=Olá!%20Gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener noreferrer" class="button-dark">entrar em contato</a>
+        <a
+          href="https://wa.me/5511922886319?text=Olá!%20Gostaria%20de%20agendar%20um%20atendimento."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button-dark"
+          >entrar em contato</a
+        >
       </section>
     </main>
     <footer class="footer">
@@ -208,11 +218,30 @@
         <p>Atendimento de adolescente e adultos</p>
       </div>
       <div class="footer-icons">
-        <a href="https://wa.me/5511922886319?text=Olá!%20Gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener noreferrer" title="11922886319"><img src="img/icone-whatsapp.svg" alt="Ícone do Whatsapp" /></a>
-        <a href="tel:+5511963993799" title="11963993799"><img src="img/icone-phone.svg" alt="Ícone de telefone" /></a>
-        <a href="mailto:psico.leticiamaciel@gmail.com" title="psico.leticiamaciel@gmail.com"><img src="img/icone-email.svg" alt="Ícone do e-mail" /></a>
-        <a href="https://www.instagram.com/psi_leticiamaciel/" target="_blank" rel="noopener noreferrer" title="psi_leticiamaciel"><img src="img/icone-instagram.svg" alt="Ícone do Instagram" /></a>
+        <a
+          href="https://wa.me/5511922886319?text=Olá!%20Gostaria%20de%20agendar%20um%20atendimento."
+          target="_blank"
+          rel="noopener noreferrer"
+          title="11922886319"
+          ><img src="img/icone-whatsapp.svg" alt="Ícone do Whatsapp"
+        /></a>
+        <a href="tel:+5511963993799" title="11963993799"
+          ><img src="img/icone-phone.svg" alt="Ícone de telefone"
+        /></a>
+        <a
+          href="mailto:psico.leticiamaciel@gmail.com"
+          title="psico.leticiamaciel@gmail.com"
+          ><img src="img/icone-email.svg" alt="Ícone do e-mail"
+        /></a>
+        <a
+          href="https://www.instagram.com/psi_leticiamaciel/"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="psi_leticiamaciel"
+          ><img src="img/icone-instagram.svg" alt="Ícone do Instagram"
+        /></a>
       </div>
     </footer>
+  <script src="js/menu.js"></script>
   </body>
 </html>
