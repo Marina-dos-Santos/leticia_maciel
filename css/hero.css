@@ -75,10 +75,12 @@
   border-radius: 0.625rem;
   box-sizing: border-box;
   padding-top: 0.625rem;
+  transition: transform 0.3 ease;
 }
 .button:hover {
   background-color: var(--hover-color);
   color: var(--secondary-color);
+  transform: scale(1.1);
 }
 
 @media screen and (min-width: 768px) {
