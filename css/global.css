@@ -1,18 +1,18 @@
 @font-face {
     font-family: 'Cormorant Garamond';
-    src: url('../fonts/CormorantGaramond.ttf') format('truetype');
+    src: url('../fonts/cormorantgaramond.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Fraunces';
-    src: url('../fonts/Fraunces.ttf') format('truetype');
+    src: url('../fonts/fraunces.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Cairo';
-    src: url('../fonts/Cairo.ttf') format('truetype');
+    src: url('../fonts/cairo.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
