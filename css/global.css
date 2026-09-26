@@ -1,19 +1,43 @@
 @font-face {
     font-family: 'Cormorant Garamond';
-    src: url('../fonts/cormorantgaramond.woff2') format('woff2');
-    font-weight: normal;
+    src: url('../fonts/cormorantgaramond-light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('../fonts/cormorantgaramond-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('../fonts/cormorantgaramond-bold.woff2') format('woff2');
+    font-weight: 700;
     font-style: normal;
 }
 @font-face {
     font-family: 'Fraunces';
-    src: url('../fonts/fraunces.woff2') format('woff2');
-    font-weight: normal;
+    src: url('../fonts/fraunces-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Fraunces';
+    src: url('../fonts/fraunces-bold.woff2') format('woff2');
+    font-weight: 700;
     font-style: normal;
 }
 @font-face {
     font-family: 'Cairo';
-    src: url('../fonts/cairo.woff2') format('woff2');
-    font-weight: normal;
+    src: url('../fonts/cairo-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cairo';
+    src: url('../fonts/cairo-bold.woff2') format('woff2');
+    font-weight: 700;
     font-style: normal;
 }
 

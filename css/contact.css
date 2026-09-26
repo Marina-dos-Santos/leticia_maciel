@@ -18,7 +18,7 @@
 .contact-subtitle em {
   font-family: "Cormorant Garamond", sans-serif;
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
 }
 .contact-container hr {
@@ -55,7 +55,7 @@
   color: var(--secondary-color);
   text-transform: uppercase;
   display: inline-block;
-  font-weight: bold;
+  font-weight: 700;
   text-decoration: none;
   text-align: center;
   border-radius: 0.625rem;
