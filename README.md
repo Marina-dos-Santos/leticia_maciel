@@ -18,5 +18,5 @@ Criar uma presença digital que transmita a proposta da psicoterapia (escuta, ac
 - JavaScript 
 
 ## 👩‍💻 Desenvolvido por
-**[Marina dos Santos]**
-[LinkedIn]( https://www.linkedin.com/in/marina-dos-santos-ab38431a3/) · [Portfólio](https://marinasantos.com.br) · [marinadossantos2001@gmail.com](mailto:marinadossantos2001@gmail.com)
+**Marina dos Santos**
+[LinkedIn]( https://www.linkedin.com/in/marina-dos-santos-ab38431a3/) · [Portfólio](https://marinasantos.com.br) · [E-mail](mailto:marinadossantos2001@gmail.com)
